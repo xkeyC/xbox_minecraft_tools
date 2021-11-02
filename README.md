@@ -1,4 +1,4 @@
-# xbox_minectaft_tools
+# xbox_minecraft_tools
 
 A new Flutter project.
 

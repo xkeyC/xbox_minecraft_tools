@@ -12,7 +12,7 @@ set API=26
 
 set CC=%TOOLCHAIN%/bin/%TARGET%%API%-clang
 
-go build -buildmode=c-shared -o ../android/app/lib/arm64-v8a/libcore.so main.go
+go build -buildmode=c-shared -o ../android/app/libs/arm64-v8a/libcore.so main.go
 
 echo "Build arm64-v8a success"
 cd ..

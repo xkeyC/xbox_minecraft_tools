@@ -1,4 +1,4 @@
-package cn.xkeyc.xmt.xbox_minectaft_tools
+package cn.xkeyc.xmt.xbox_minecraft_tools
 
 import io.flutter.embedding.android.FlutterActivity
 

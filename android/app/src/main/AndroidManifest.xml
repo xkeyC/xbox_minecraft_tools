@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.xkeyc.xmt.xbox_minectaft_tools">
+    package="cn.xkeyc.xmt.xbox_minecraft_tools">
    <application
-        android:label="xbox_minectaft_tools"
+        android:label="xbox_minecraft_tools"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

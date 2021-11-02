@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+import 'ffi/channel.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+
 
   // This widget is the root of your application.
   @override
@@ -59,6 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+  }
+
+  @override
+  void initState() {
+    print(CoreLibChannel.Ping());
+    super.initState();
   }
 
   @override
