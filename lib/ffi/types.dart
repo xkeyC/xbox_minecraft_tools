@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:ffi' as ffi;
 import 'package:ffi/ffi.dart';
 
-extension CString on ffi.Pointer<ffi.Int8> {
+extension CChar on ffi.Pointer<ffi.Int8> {
   String toDartString() {
     final len = _length(this);
     List<int> units = [];

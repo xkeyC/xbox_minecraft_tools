@@ -30,11 +30,16 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.3
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  url_launcher: ^6.0.12
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   ffigen: ^4.1.1
+  hive_generator: ^1.1.1
+  build_runner: ^2.1.4
 
 ffigen:
   output: './lib/ffi/lib-core.dart'
@@ -47,6 +52,8 @@ ffigen:
   functions:
     include: # 'exclude' is also available.
       - Ping
+      - StartUDPProxy
+      - StopUDPProxy
     rename:
       'clang_(.*)': '$1'
       'clang_dispose': 'dispose'

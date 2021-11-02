@@ -38,6 +38,32 @@ class NativeLibrary {
           ffi.Pointer<ffi.Int8> Function(ffi.Pointer<ffi.Int8>)>>('Ping');
   late final _Ping = _PingPtr.asFunction<
       ffi.Pointer<ffi.Int8> Function(ffi.Pointer<ffi.Int8>)>();
+
+  ffi.Pointer<ffi.Int8> StartUDPProxy(
+    ffi.Pointer<ffi.Int8> host,
+    ffi.Pointer<ffi.Int8> port,
+  ) {
+    return _StartUDPProxy(
+      host,
+      port,
+    );
+  }
+
+  late final _StartUDPProxyPtr = _lookup<
+      ffi.NativeFunction<
+          ffi.Pointer<ffi.Int8> Function(
+              ffi.Pointer<ffi.Int8>, ffi.Pointer<ffi.Int8>)>>('StartUDPProxy');
+  late final _StartUDPProxy = _StartUDPProxyPtr.asFunction<
+      ffi.Pointer<ffi.Int8> Function(
+          ffi.Pointer<ffi.Int8>, ffi.Pointer<ffi.Int8>)>();
+
+  void StopUDPProxy() {
+    return _StopUDPProxy();
+  }
+
+  late final _StopUDPProxyPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function()>>('StopUDPProxy');
+  late final _StopUDPProxy = _StopUDPProxyPtr.asFunction<void Function()>();
 }
 
 typedef uintptr_t = ffi.Uint64;

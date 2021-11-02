@@ -69,6 +69,8 @@ extern "C" {
 #endif
 
 extern char* Ping(char* str);
+extern char* StartUDPProxy(char* host, char* port);
+extern void StopUDPProxy();
 
 #ifdef __cplusplus
 }
